@@ -1,4 +1,4 @@
-algoritmo "semnome"
+algoritmo "BASKARA"
 var
      a, b, c, x1, x2, delta :real
 inicio

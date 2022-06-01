@@ -1,39 +1,29 @@
-algoritmo "turma"
-
+algoritmo "soma_vetor"
 
 var
-   nome: vetor [1..4] de caractere
-   n1: vetor [1..4] de real
-   n2: vetor [1..4] de real
-   m: vetor  [1..4] de real
-   sm, mt: real
-   i, tot: inteiro
-
+   MEDIA, SOMA : Real
+   VET : VETOR [0..8] DE REAL
+   i, n: INTEIRO
 inicio
-     para i de 1 ate 3 faca
-        escrevaL ("ALUNO ", I)
-        escreva ("Nome: ")
-        leia (nome [i])
-        escreva ("Primeira Nota: ")
-        leia (n1[i])
-        escreva ("Segunda Nota: ")
-        leia (n2[i])
-        m[i] <- (n1[i] + n2[i])/ 2
-        sm <- sm + m[i]
-        fimpara
-        mt <- sm/4
-        escreval ("LISTAGEM DE ALUNOS ")
-        escreval("----------------------")
+   escreva ("Quantos numeros voce vai digitar? ")
+   leia (n)
 
+   para i de 0 ate n-1 faca
+      escreva ("Digite um numero: ")
+      leia (vet[i])
+   fimpara
 
-        para i de 1 ate 3 faca
-          escrevaL (nome[i]:15, m[i]:4:1)
-          se (m[i] > mt) entao
-          tot <- tot + 1
-          fimse
+   escreval
+   escreva ("VALORES = ")
 
-        fimpara
-        escreval("Ao todo temos ", tot, " alunos acima da media da turma ", mt:4:2)
+   para i de 0 ate n-1 faca
+      escreva (VET[I]:3:1, " ")
+      SOMA <- SOMA + VET[i]
+   fimpara
 
+   escreval
+   MEDIA <- SOMA / N
+   escreval ("SOMA = ", soma:4:2)
+   escreval ("MEDIA = ", media:4:2)
 
 fimalgoritmo
